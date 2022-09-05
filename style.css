@@ -1,3 +1,7 @@
+ #container{
+   min-height: 1000px; 
+   background-color: rgba(50, 50, 50, 0.3);
+ }
  #center{
     justify-content: center;
     align-items: center;
@@ -13,24 +17,20 @@
     padding: 15px;
     font-size: 20px;
    
-}
-     
+}   
 #nav a{
     text-decoration: none;
     margin-left: 100px;
     padding: 5px;
     color: black;
 }
- 
  #nav a:hover{
     background-color: white;
  }
-
  #intro{ font-size: 40px;
     color: black;
     text-align: left;
  }
-
  #sec1{
     background-color: rgba(50, 50, 50, 0.2);
     border: 50px black none;
@@ -52,7 +52,7 @@
     height: fit-content;
     width: 100%;
     display: flex;
-padding: 40px;
+    padding: 40px;
     justify-content: center;
     
 
@@ -75,7 +75,6 @@ padding: 40px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.78);
     
  }
-
  #contact li{
     
     color: white;
@@ -85,14 +84,100 @@ padding: 40px;
     margin-left: 50px;
 
  }
-
  #contact li:hover{
     background-color: black;
  }
+ #return {
+   font-weight: 50px; 
+   font-size: 20px;  
+   color: black; 
+   text-decoration: none;
+   display: block; 
+   justify-content: center;
+ 
+ }
+ #tittle{
+   border: 4px black solid;
+   color: black;
+   width: fit-content;
+   margin-left: 10px;
+    font-size: 30px;
+     display: inline-block; 
 
- @media only screen and ( max-width:900px ){
-   body{
-      background-color: red;
+ }
+ /* #tittledesign{
+
+ } */
+
+ /* media queary side */
+ /* for phones deisgn */
+
+ 
+ @media screen and ( max-width:600px ){
+   #container{
+      width: 100%;
+      padding: 2%;
+      margin: 0;
+      background-color: rgba(50, 50, 50, 0.3);
    }
+   #tittle{
+      border: 4px black solid;
+      color: black;
+      width: fit-content;
+      margin-left: 10px;
+       font-size: 30px;
+        display: inline-block; 
    
+    }
+
+   #nav{
+      list-style-type: none;
+      display: inline-block;
+      margin-left: 17%;
+      /* background-color: rgba(50, 50, 50, 0.5); */
+      width: fit-content ;
+     
+  }
+       
+#nav a{
+   font-size: 20px; 
+   text-decoration: none;
+   font-weight: bolder;
+   color: black;
+}
+  #pics{
+   height: fit-content;
+   width: 77%;
+   display: block;
+   margin-left: 11%;
+   padding: 5px;
+  }
+  #pi{
+   border: 5px black none;
+   border-radius: 5px;
+   margin-bottom: 10px;
+   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.48);
+}
+  
+  #contact{
+   width: fit-content;
+   display: inline-block;
+   list-style-type: none;
+   background-color: rgba(50, 50, 50, 0.68);
+   padding: 5px;
+   border: 4px black none;
+   border-radius: 5px;
+   margin-left: 17%;
+   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.78);
+   
+}
+#return {
+font-size: 20px;  
+color: black; 
+font-weight: 50px; 
+text-decoration: none;
+display: inline-block;
+margin-left: 40%;      
+}
+     
  }
